@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Ambiente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Ambiente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Dispositivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Dispositivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DispositivoReservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DispositivoReservado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/GrupoDispositivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/GrupoDispositivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Manutencao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Manutencao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Reserva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/StatusManutencao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/StatusManutencao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/StatusReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/StatusReserva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/TipoDispositivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/TipoDispositivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/TipoUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/TipoUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Turma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Usuario.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2if0FJp0Plol6nxnlmj4pGPzFhP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="WdmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="wdm" />
@@ -13,5 +63,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="" />
+      <created>1719866219327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719866219327</updated>
+      <workItem from="1719866220330" duration="8042000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
