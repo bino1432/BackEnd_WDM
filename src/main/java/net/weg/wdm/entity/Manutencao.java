@@ -35,6 +35,7 @@ public class Manutencao {
 
     private LocalDateTime dataFim;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private StatusManutencao status;
 }

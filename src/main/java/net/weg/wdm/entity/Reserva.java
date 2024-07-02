@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @AllArgsConstructor
@@ -22,7 +23,7 @@ public class Reserva {
     @Column(nullable = false)
     private Usuario solicitante;
 
-    @OneToMany(mappedBy = "reserva")
+    @OneToMany(mappedBy = "reserva", cascade = CascadeType.ALL)
     private List<DispositivoReservado> dispositivoReservados;
 
     @Enumerated(EnumType.STRING)
@@ -35,5 +36,17 @@ public class Reserva {
     @ManyToOne
     @Column(nullable = false)
     private Turma turma;
+
+    @ManyToOne
+    @Column(nullable = false)
+    private Periodo periodo;
+
+    @Column(nullable = false)
+    private LocalDateTime dia;
+
+    @ManyToOne
+    @Column(nullable = false)
+    private SolicitacaoReserva solicitacao;
+
     private String comentario;
 }

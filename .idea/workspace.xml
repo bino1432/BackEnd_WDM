@@ -5,24 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/PeriodoReservaCadastro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/ReservaCadastro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DiaSemana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Periodo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/SolicitacaoReserva.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Ambiente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Ambiente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Dispositivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Dispositivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DispositivoReservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DispositivoReservado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/GrupoDispositivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/GrupoDispositivo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Manutencao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Manutencao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Reserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/StatusManutencao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/StatusManutencao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/StatusReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/StatusReserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/TipoDispositivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/TipoDispositivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/TipoUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/TipoUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Turma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Usuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,6 +41,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2if0FJp0Plol6nxnlmj4pGPzFhP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719866219327</updated>
-      <workItem from="1719866220330" duration="8042000" />
+      <workItem from="1719866220330" duration="14729000" />
     </task>
     <servers />
   </component>
