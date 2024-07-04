@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="" />
+    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/ReservaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/ReservaServiceInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/PeriodoReservaCadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/PeriodoReservaRequestPostDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/ReservaCadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/ReservaRequestPostDTO.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +22,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -42,6 +50,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
@@ -49,9 +58,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "configurable.group.appearance",
+    "spring.configuration.checksum": "da552355df18d706b1cb44aad2699661",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="net.weg.wdm" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="WdmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="wdm" />
@@ -70,6 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719866219327</updated>
       <workItem from="1719866220330" duration="14996000" />
+      <workItem from="1720119640088" duration="4116000" />
     </task>
     <servers />
   </component>
