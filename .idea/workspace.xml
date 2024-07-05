@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/DispositivivoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/DispositivoServiceInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/SolicitacaoReservaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/SolicitacaoReservaServiceInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/ReservaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/ReservaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/ReservaRequestPostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/ReservaRequestPostDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/ReservaServiceInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/ReservaServiceInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/DispositivivoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/DispositivivoServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +85,7 @@
       <updated>1719866219327</updated>
       <workItem from="1719866220330" duration="14996000" />
       <workItem from="1720119640088" duration="4118000" />
-      <workItem from="1720197987051" duration="7675000" />
+      <workItem from="1720197987051" duration="8293000" />
     </task>
     <servers />
   </component>
