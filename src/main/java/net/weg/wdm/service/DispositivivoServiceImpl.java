@@ -16,7 +16,7 @@ public class DispositivivoServiceImpl implements DispositivoServiceInt{
 
     @Override
     public List<Dispositivo> buscarDispositivosPorId(List<Long> ids) {
-        return dispositivoRepository.findById(ids);
+        return dispositivoRepository.findAllById(ids);
 
     }
 }
