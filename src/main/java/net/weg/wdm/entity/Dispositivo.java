@@ -21,7 +21,7 @@ public class Dispositivo {
     private Long numero;
 
     @ManyToOne
-    @Column(nullable = false)
+    @JoinColumn(nullable = false)
     private TipoDispositivo tipo;
 
     @Column(nullable = false, length = 50)

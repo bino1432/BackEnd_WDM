@@ -22,4 +22,7 @@ public class GrupoDispositivo {
 
     @ManyToMany
     private List<Dispositivo> dispositivos;
+
+    @ManyToOne
+    private Usuario usuario;
 }

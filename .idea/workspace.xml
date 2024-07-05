@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="" />
+    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/repository/AmbienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/repository/DispositivoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/repository/GrupoDispositivoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/repository/ManutencaoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/repository/PeriodoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/repository/ReservaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/repository/SolicitacaoReservaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/repository/TipoDispositivoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/repository/TurmaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Dispositivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Dispositivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DispositivoReservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DispositivoReservado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/GrupoDispositivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/GrupoDispositivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Manutencao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Manutencao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Reserva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +62,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -79,6 +103,7 @@
       <updated>1719866219327</updated>
       <workItem from="1719866220330" duration="14996000" />
       <workItem from="1720119640088" duration="4118000" />
+      <workItem from="1720197987051" duration="3188000" />
     </task>
     <servers />
   </component>

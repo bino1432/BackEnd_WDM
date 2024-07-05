@@ -18,11 +18,11 @@ public class Manutencao {
     private Long codigo;
 
     @ManyToOne
-    @Column(nullable = false)
+    @JoinColumn(nullable = false)
     private Usuario solicitante;
 
     @ManyToOne
-    @Column(nullable = false)
+    @JoinColumn(nullable = false)
     private Dispositivo dispositivo;
 
     @Column(nullable = false)

@@ -35,7 +35,7 @@ public class Usuario {
     @Column(nullable = false)
     private TipoUsuario tipo;
 
-    @OneToMany
+    @OneToMany(mappedBy = "usuario")
     private List<GrupoDispositivo> gruposDispositivo;
 
 }
