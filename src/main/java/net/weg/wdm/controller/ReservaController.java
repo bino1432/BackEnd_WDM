@@ -2,10 +2,9 @@ package net.weg.wdm.controller;
 
 import lombok.AllArgsConstructor;
 import net.weg.wdm.controller.dto.reserva.ReservaRequestPostDTO;
-import net.weg.wdm.entity.Reserva;
 import net.weg.wdm.entity.SolicitacaoReserva;
-import net.weg.wdm.service.ReservaServiceInt;
-import net.weg.wdm.service.SolicitacaoReservaServiceInt;
+import net.weg.wdm.service.interfaces.ReservaServiceInt;
+import net.weg.wdm.service.interfaces.SolicitacaoReservaServiceInt;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

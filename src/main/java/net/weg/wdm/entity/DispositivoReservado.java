@@ -1,9 +1,7 @@
 package net.weg.wdm.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -11,6 +9,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Data
 @Entity
+@RequiredArgsConstructor
 public class DispositivoReservado {
 
     @Id
@@ -18,6 +17,7 @@ public class DispositivoReservado {
     private Long id;
 
     @ManyToOne
+    @NonNull
     @JoinColumn(nullable = false)
     private Dispositivo dispositivo;
 

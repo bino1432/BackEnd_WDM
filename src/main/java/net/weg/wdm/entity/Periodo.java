@@ -1,9 +1,7 @@
 package net.weg.wdm.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -11,9 +9,11 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Data
 @Entity
+@RequiredArgsConstructor
 public class Periodo {
 
     @Id
+    @NonNull
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

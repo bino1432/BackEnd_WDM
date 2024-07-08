@@ -1,4 +1,4 @@
-package net.weg.wdm.service;
+package net.weg.wdm.service.interfaces;
 
 import org.springframework.stereotype.Service;
 

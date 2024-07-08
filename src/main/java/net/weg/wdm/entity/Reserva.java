@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -28,7 +29,7 @@ public class Reserva {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private StatusReserva status;
+    private StatusReserva status = StatusReserva.EM_ABERTO;
 
     @ManyToOne
     @JoinColumn(nullable = false)
@@ -43,7 +44,7 @@ public class Reserva {
     private Periodo periodo;
 
     @Column(nullable = false)
-    private LocalDateTime dia;
+    private LocalDate dia;
 
     @ManyToOne
     @JoinColumn(nullable = false)
