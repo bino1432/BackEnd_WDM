@@ -7,13 +7,13 @@ import lombok.Getter;
 @Getter
 public enum DiaSemana {
 
-    DOMINGO("Domingo"),
     SEGUNDA("Segunda-Feira"),
     TERCA("Terça-Feira"),
     QUARTA("Quarta-Feira"),
     QUINTA("Quinta-Feira"),
     SEXTA("Sexta-Feira"),
-    SABADO("Sabado");
+    SABADO("Sabado"),
+    DOMINGO("Domingo");
 
     private final String NOME;
 

@@ -4,9 +4,11 @@ import lombok.AllArgsConstructor;
 import net.weg.wdm.controller.dto.reserva.PeriodoReservaRequestPostDTO;
 import net.weg.wdm.controller.dto.reserva.ReservaRequestPostDTO;
 import net.weg.wdm.entity.*;
+import net.weg.wdm.repository.SolicitacaoReservaRepository;
 import net.weg.wdm.service.interfaces.SolicitacaoReservaServiceInt;
 import org.springframework.stereotype.Service;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +20,7 @@ import java.util.Set;
 public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceInt {
 
     private final DispositivoServiceImpl dispositivoService;
-    private final UsuarioServiceImpl usuarioService;
+    private final SolicitacaoReservaRepository repository;
 
     @Override
     public SolicitacaoReserva criarSolicitacaoReservas(ReservaRequestPostDTO reservaDTO){
@@ -34,19 +36,21 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
 
         LocalDate data = reservaDTO.getInicio();
         do {
-
             for(PeriodoReservaRequestPostDTO periodoDTO : reservaDTO.getPeriodos()){
-                for(TipoDispositivo tipo : tipos){
+                DayOfWeek diaDaSemana = data.getDayOfWeek();
+                if (periodoDTO.getDiaSemana().ordinal() == diaDaSemana.ordinal()){
+                    for(TipoDispositivo tipo : tipos){
 
-                    reservas.add(criarReserva(reservaDTO, tipo, periodoDTO, data, dispositivos));
+                        reservas.add(criarReserva(reservaDTO, tipo, periodoDTO, data, dispositivos));
 
+                    }
                 }
             }
 
             data = data.plusDays(1);
         } while (data.isBefore(reservaDTO.getFim().plusDays(1)));
         solicitacaoReserva.setReservas(reservas);
-        return solicitacaoReserva;
+        return repository.save(solicitacaoReserva);
     }
 
     private Reserva criarReserva(ReservaRequestPostDTO reservaDTO, TipoDispositivo tipo,

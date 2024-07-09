@@ -14,7 +14,7 @@ public class ReservaRequestPostDTO {
     private Long idUsuario;
     private Long idTurma;
     private List<Long> idDispositivos;
-    private List<PeriodoReservaRequestPostDTO> Periodos;
+    private List<PeriodoReservaRequestPostDTO> periodos;
     private LocalDate inicio;
     private LocalDate fim;
 }

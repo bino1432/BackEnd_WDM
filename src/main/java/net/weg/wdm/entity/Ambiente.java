@@ -17,7 +17,4 @@ public class Ambiente {
 
     @Column(unique = true, length = 50, nullable = false)
     private String nome;
-
-    public Ambiente(Long idAmbiente) {
-    }
 }

@@ -15,10 +15,10 @@ import java.util.Map;
 @Service
 public class DispositivoServiceImpl implements DispositivoServiceInt {
 
-    private DispositivoRepository dispositivoRepository;
+    private DispositivoRepository repository;
 
     private List<Dispositivo> buscarDispositivosPorId(List<Long> ids) {
-        return dispositivoRepository.findAllById(ids);
+        return repository.findAllById(ids);
     }
 
     @Override
