@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/ReservaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/ReservaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/ReservaRequestPostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/ReservaRequestPostDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Ambiente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Ambiente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DiaSemana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DiaSemana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/implementation/DispositivoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/implementation/DispositivoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/implementation/SolicitacaoReservaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/implementation/SolicitacaoReservaServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +84,7 @@
       <workItem from="1719866220330" duration="14996000" />
       <workItem from="1720119640088" duration="4118000" />
       <workItem from="1720197987051" duration="8889000" />
-      <workItem from="1720471065713" duration="13731000" />
+      <workItem from="1720471065713" duration="13927000" />
     </task>
     <servers />
   </component>
