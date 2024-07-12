@@ -6,6 +6,7 @@ import net.weg.wdm.controller.dto.reserva.ReservaRequestPostDTO;
 import net.weg.wdm.entity.*;
 import net.weg.wdm.repository.SolicitacaoReservaRepository;
 import net.weg.wdm.service.interfaces.SolicitacaoReservaServiceInt;
+import org.hibernate.event.spi.SaveOrUpdateEvent;
 import org.springframework.stereotype.Service;
 
 import java.time.DayOfWeek;
@@ -41,7 +42,7 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
                 if (periodoDTO.getDiaSemana().ordinal() == diaDaSemana.ordinal()){
                     for(TipoDispositivo tipo : tipos){
 
-                        reservas.add(criarReserva(reservaDTO, tipo, periodoDTO, data, dispositivos));
+                        reservas.add(criarReserva(reservaDTO, periodoDTO, data, solicitacaoReserva));
 
                     }
                 }
@@ -49,15 +50,20 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
 
             data = data.plusDays(1);
         } while (data.isBefore(reservaDTO.getFim().plusDays(1)));
+        repository.save(solicitacaoReserva);
         solicitacaoReserva.setReservas(reservas);
         return repository.save(solicitacaoReserva);
+
     }
 
-    private Reserva criarReserva(ReservaRequestPostDTO reservaDTO, TipoDispositivo tipo,
-                                 PeriodoReservaRequestPostDTO periodoDTO, LocalDate data,
-                                 Map<TipoDispositivo, List<Dispositivo>> dispositivos) {
+    private Reserva criarReserva(ReservaRequestPostDTO reservaDTO,
+                                 PeriodoReservaRequestPostDTO periodoDTO,
+                                 LocalDate data,
+                                 SolicitacaoReserva solicitacaoReserva) {
 
         Reserva reserva = new Reserva();
+
+        reserva.setSolicitacao(solicitacaoReserva);
 
         reserva.setSolicitante(new Usuario(reservaDTO.getIdUsuario()));
 
@@ -69,9 +75,13 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
 
         reserva.setTurma(new Turma(reservaDTO.getIdTurma()));
 
-        reserva.setDispositivoReservados(dispositivos.get(tipo).stream().map(
-                                                        DispositivoReservado::new).toList());
-
         return reserva;
+    }
+
+    private void criarDispositivosReservados(Map<TipoDispositivo, List<Dispositivo>> dispositivos,
+                                             TipoDispositivo tipo,
+                                             Reserva reserva){
+        reserva.setDispositivoReservados(dispositivos.get(tipo).stream().map(
+                DispositivoReservado::new).toList());
     }
 }

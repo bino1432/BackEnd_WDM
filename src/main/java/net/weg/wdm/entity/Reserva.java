@@ -5,6 +5,7 @@ import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -43,11 +44,12 @@ public class Reserva {
     @JoinColumn(nullable = false)
     private Periodo periodo;
 
-    @Column(nullable = false)
+    @JoinColumn(nullable = false)
     private LocalDate dia;
 
     @ManyToOne
     @JoinColumn(nullable = false)
+    @ToString.Exclude
     private SolicitacaoReserva solicitacao;
 
     private String comentario;

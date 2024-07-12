@@ -7,6 +7,7 @@ import net.weg.wdm.repository.DispositivoRepository;
 import net.weg.wdm.service.interfaces.DispositivoServiceInt;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,7 +29,10 @@ public class DispositivoServiceImpl implements DispositivoServiceInt {
         Map<TipoDispositivo, List<Dispositivo>> dispositivosPorTipo = new HashMap<>();
 
         for(Dispositivo dispositivo : dispositivos) {
-            List<Dispositivo> dispositivoList = dispositivosPorTipo.get(dispositivo.getTipo());
+            List<Dispositivo> dispositivoList = new ArrayList<>();
+            if(dispositivosPorTipo.containsKey(dispositivo.getTipo())){
+                dispositivoList = dispositivosPorTipo.get(dispositivo.getTipo());
+            }
             dispositivoList.add(dispositivo);
             dispositivosPorTipo.put(dispositivo.getTipo(), dispositivoList);
         }
