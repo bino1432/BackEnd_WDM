@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DispositivoReservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DispositivoReservado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/implementation/SolicitacaoReservaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/implementation/SolicitacaoReservaServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +86,7 @@
       <workItem from="1720197987051" duration="8889000" />
       <workItem from="1720471065713" duration="13927000" />
       <workItem from="1720560373539" duration="12000" />
-      <workItem from="1720802404062" duration="9364000" />
+      <workItem from="1720802404062" duration="10160000" />
     </task>
     <servers />
   </component>
