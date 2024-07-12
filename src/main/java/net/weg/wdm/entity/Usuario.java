@@ -1,5 +1,6 @@
 package net.weg.wdm.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -29,6 +30,7 @@ public class Usuario {
     private boolean habilitado;
 
     @OneToMany(mappedBy = "solicitante")
+    @JsonIgnore
     private List<Reserva> reservas;
 
     @Enumerated(EnumType.STRING)

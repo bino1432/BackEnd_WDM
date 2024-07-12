@@ -53,6 +53,7 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
         repository.save(solicitacaoReserva);
         solicitacaoReserva.setReservas(reservas);
         return repository.save(solicitacaoReserva);
+//        criarDispositivosReservados(dispositivos, solicitacaoReserva);
 
     }
 
@@ -78,10 +79,11 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
         return reserva;
     }
 
-    private void criarDispositivosReservados(Map<TipoDispositivo, List<Dispositivo>> dispositivos,
-                                             TipoDispositivo tipo,
-                                             Reserva reserva){
-        reserva.setDispositivoReservados(dispositivos.get(tipo).stream().map(
-                DispositivoReservado::new).toList());
-    }
+//    private void criarDispositivosReservados(Map<TipoDispositivo, List<Dispositivo>> dispositivos,
+//                                             SolicitacaoReserva solicitacaoReserva){
+//        for(Reserva reserva : solicitacaoReserva.getReservas()){
+//            reserva.setDispositivoReservados(dispositivos.get(tipo).stream().map(
+//                    DispositivoReservado::new).toList());
+//        }
+//    }
 }

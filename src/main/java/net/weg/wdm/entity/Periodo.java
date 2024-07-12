@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -21,9 +22,9 @@ public class Periodo {
     private String nome;
 
     @Column(nullable = false)
-    private LocalDateTime inicio;
+    private LocalTime inicio;
 
     @Column(nullable = false)
-    private LocalDateTime fim;
+    private LocalTime fim;
 
 }

@@ -1,5 +1,6 @@
 package net.weg.wdm.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
@@ -50,6 +51,7 @@ public class Reserva {
     @ManyToOne
     @JoinColumn(nullable = false)
     @ToString.Exclude
+    @JsonIgnore
     private SolicitacaoReserva solicitacao;
 
     private String comentario;
