@@ -1,5 +1,6 @@
 package net.weg.wdm.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -25,6 +26,9 @@ public class DispositivoReservado {
     private LocalDateTime devolucao;
 
     @ManyToOne
+    @NonNull
     @JoinColumn(nullable = false)
+    @JsonIgnore
+    @ToString.Exclude
     private Reserva reserva;
 }
