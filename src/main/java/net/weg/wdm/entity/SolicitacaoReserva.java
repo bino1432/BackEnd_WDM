@@ -18,7 +18,8 @@ public class SolicitacaoReserva {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(mappedBy = "solicitacao", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_solicitacao")
     private List<Reserva> reservas;
 
 

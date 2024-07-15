@@ -26,7 +26,8 @@ public class Reserva {
     @JoinColumn(nullable = false)
     private Usuario solicitante;
 
-    @OneToMany(mappedBy = "reserva", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_reserva")
     private List<DispositivoReservado> dispositivoReservados;
 
     @Enumerated(EnumType.STRING)
@@ -48,11 +49,11 @@ public class Reserva {
     @JoinColumn(nullable = false)
     private LocalDate dia;
 
-    @ManyToOne
-    @JoinColumn(nullable = false)
-    @ToString.Exclude
-    @JsonIgnore
-    private SolicitacaoReserva solicitacao;
+//    @ManyToOne
+//    @JoinColumn(nullable = false)
+//    @ToString.Exclude
+//    @JsonIgnore
+//    private SolicitacaoReserva solicitacao;
 
     private String comentario;
 }

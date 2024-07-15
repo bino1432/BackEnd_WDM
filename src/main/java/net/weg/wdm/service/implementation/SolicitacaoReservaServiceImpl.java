@@ -2,11 +2,12 @@ package net.weg.wdm.service.implementation;
 
 import lombok.AllArgsConstructor;
 import net.weg.wdm.controller.dto.reserva.PeriodoReservaRequestPostDTO;
-import net.weg.wdm.controller.dto.reserva.ReservaRequestPostDTO;
+import net.weg.wdm.controller.dto.reserva.SolicitacaoReservaRequestPostDTO;
 import net.weg.wdm.entity.*;
 import net.weg.wdm.repository.SolicitacaoReservaRepository;
 import net.weg.wdm.service.interfaces.SolicitacaoReservaServiceInt;
-import org.hibernate.event.spi.SaveOrUpdateEvent;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.DayOfWeek;
@@ -24,9 +25,9 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
     private final SolicitacaoReservaRepository repository;
 
     @Override
-    public SolicitacaoReserva criarSolicitacaoReservas(ReservaRequestPostDTO reservaDTO){
+    public SolicitacaoReserva criarSolicitacaoReservas(SolicitacaoReservaRequestPostDTO reservaDTO){
         SolicitacaoReserva solicitacaoReserva = new SolicitacaoReserva();
-        repository.save(solicitacaoReserva);
+//        repository.save(solicitacaoReserva);
 
         Map<TipoDispositivo, List<Dispositivo>> dispositivos =
                 dispositivoService.buscarDispositivosPorIdSeparadosPorTipo(
@@ -44,11 +45,8 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
                 if (periodoDTO.getDiaSemana().ordinal() == diaDaSemana.ordinal()){
                     for(TipoDispositivo tipo : tipos){
 
-                        Reserva reserva = criarReserva(reservaDTO, periodoDTO, data, solicitacaoReserva);
+                        Reserva reserva = criarReserva(reservaDTO, periodoDTO, data, tipo, dispositivos);
                         reservas.add(reserva);
-                        repository.save(solicitacaoReserva);
-                        criarDispositivosReservados(dispositivos, reserva, tipo);
-                        repository.save(solicitacaoReserva);
 
                     }
                 }
@@ -56,17 +54,16 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
 
             data = data.plusDays(1);
         } while (data.isBefore(reservaDTO.getFim().plusDays(1)));
-        return solicitacaoReserva;
+         return repository.save(solicitacaoReserva);
     }
 
-    private Reserva criarReserva(ReservaRequestPostDTO reservaDTO,
+    private Reserva criarReserva(SolicitacaoReservaRequestPostDTO reservaDTO,
                                  PeriodoReservaRequestPostDTO periodoDTO,
                                  LocalDate data,
-                                 SolicitacaoReserva solicitacaoReserva) {
+                                 TipoDispositivo tipo,
+                                 Map<TipoDispositivo, List<Dispositivo>> dispositivos) {
 
         Reserva reserva = new Reserva();
-
-        reserva.setSolicitacao(solicitacaoReserva);
 
         reserva.setSolicitante(new Usuario(reservaDTO.getIdUsuario()));
 
@@ -78,13 +75,24 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
 
         reserva.setTurma(new Turma(reservaDTO.getIdTurma()));
 
+        reserva.setDispositivoReservados(dispositivos.get(tipo).stream().map(
+                DispositivoReservado::new).toList());
+
         return reserva;
     }
 
-    private void criarDispositivosReservados(Map<TipoDispositivo, List<Dispositivo>> dispositivos,
-                                             Reserva reserva,
-                                             TipoDispositivo tipo){
-        reserva.setDispositivoReservados(dispositivos.get(tipo).stream().map(dispositivo ->
-            new DispositivoReservado(dispositivo, reserva)).toList());
+    @Override
+    public SolicitacaoReserva buscarSolicitacao(Long id) {
+        return repository.findById(id).get();
+    }
+
+    @Override
+    public List<SolicitacaoReserva> buscarTodasSolicitacoes(){
+        return repository.findAll();
+    }
+
+    @Override
+    public Page<SolicitacaoReserva> buscarTodasSolicitacoesPage(Pageable pageable){
+        return repository.findAll(pageable);
     }
 }

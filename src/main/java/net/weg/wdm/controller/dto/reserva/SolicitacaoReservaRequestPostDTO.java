@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ReservaRequestPostDTO {
+public class SolicitacaoReservaRequestPostDTO {
     private Long idUsuario;
     private Long idTurma;
     private List<Long> idDispositivos;
