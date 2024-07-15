@@ -25,10 +25,4 @@ public class DispositivoReservado {
     private LocalDateTime retirada;
     private LocalDateTime devolucao;
 
-//    @ManyToOne
-//    @NonNull
-//    @JoinColumn(nullable = false)
-//    @JsonIgnore
-//    @ToString.Exclude
-//    private Reserva reserva;
 }

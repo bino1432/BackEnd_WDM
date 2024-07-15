@@ -1,15 +1,14 @@
 package net.weg.wdm.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
+import net.weg.wdm.controller.dto.reserva.PeriodoReservaRequestPostDTO;
+import net.weg.wdm.controller.dto.reserva.ReservaResponseDTO;
+import net.weg.wdm.controller.dto.reserva.SolicitacaoReservaRequestPostDTO;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @AllArgsConstructor
@@ -49,11 +48,36 @@ public class Reserva {
     @JoinColumn(nullable = false)
     private LocalDate dia;
 
-//    @ManyToOne
-//    @JoinColumn(nullable = false)
-//    @ToString.Exclude
-//    @JsonIgnore
-//    private SolicitacaoReserva solicitacao;
-
     private String comentario;
+
+    public Reserva(SolicitacaoReservaRequestPostDTO reservaDTO,
+                   PeriodoReservaRequestPostDTO periodoDTO,
+                   LocalDate data,
+                   List<DispositivoReservado> dispositivoReservados) {
+
+        this.setSolicitante(new Usuario(reservaDTO.idUsuario()));
+
+        this.setDia(data);
+
+        this.setPeriodo(new Periodo (periodoDTO.idPeriodo()));
+
+        this.setAmbiente(new Ambiente(periodoDTO.idAmbiente()));
+
+        this.setTurma(new Turma(reservaDTO.idTurma()));
+
+        this.setDispositivoReservados(dispositivoReservados);
+
+    }
+
+    public ReservaResponseDTO toDTO() {
+        return new ReservaResponseDTO(this.numero,
+                this.solicitante.getNome(),
+                this.dispositivoReservados,
+                this.status.getNOME(),
+                this.ambiente,
+                this.turma,
+                this.periodo,
+                this.dia,
+                this.comentario);
+    }
 }
