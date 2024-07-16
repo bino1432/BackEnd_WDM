@@ -1,4 +1,4 @@
-package net.weg.wdm.controller.dto.reserva;
+package net.weg.wdm.controller.dto.periodo;
 
 import net.weg.wdm.entity.DiaSemana;
 

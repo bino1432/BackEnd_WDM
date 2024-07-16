@@ -1,8 +1,9 @@
 package net.weg.wdm.service.implementation;
 
 import lombok.AllArgsConstructor;
-import net.weg.wdm.controller.dto.reserva.SolicitacaoReservaRequestPostDTO;
-import net.weg.wdm.controller.dto.reserva.SolicitacaoReservaResponseDTO;
+import net.weg.wdm.controller.dto.solicitacao.SolicitacaoReservaRequestPostDTO;
+import net.weg.wdm.controller.dto.solicitacao.SolicitacaoReservaResponseDTO;
+import net.weg.wdm.controller.dto.solicitacao.SolicitacaoResponseDTO;
 import net.weg.wdm.entity.*;
 import net.weg.wdm.repository.SolicitacaoReservaRepository;
 import net.weg.wdm.service.interfaces.SolicitacaoReservaServiceInt;
@@ -49,7 +50,13 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
     }
 
     @Override
-    public Page<SolicitacaoReserva> buscarTodasSolicitacoesPage(Pageable pageable){
-        return repository.findAll(pageable);
+    public Page<SolicitacaoResponseDTO> buscarTodasSolicitacoesPage(Pageable pageable){
+
+        Page<SolicitacaoReserva> solicitacoes = repository.findAll(pageable);
+
+        Page<SolicitacaoResponseDTO> response = solicitacoes.map(
+                solicitacao -> solicitacao.toOtherDTO());
+
+        return response;
     }
 }

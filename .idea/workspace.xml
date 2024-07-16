@@ -5,18 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/ReservaResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/SolicitacaoReservaResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/periodo/PeriodoResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/solicitacao/SolicitacaoResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/SolicitacaoReservaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/SolicitacaoReservaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/PeriodoReservaRequestPostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/PeriodoReservaRequestPostDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/SolicitacaoReservaRequestPostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/SolicitacaoReservaRequestPostDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DispositivoReservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/DispositivoReservado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/PeriodoReservaRequestPostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/periodo/PeriodoReservaRequestPostDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/ReservaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/ReservaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/SolicitacaoReservaRequestPostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/solicitacao/SolicitacaoReservaRequestPostDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/reserva/SolicitacaoReservaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/controller/dto/solicitacao/SolicitacaoReservaResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Reserva.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/SolicitacaoReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/SolicitacaoReserva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/entity/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/implementation/SolicitacaoReservaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/implementation/SolicitacaoReservaServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/interfaces/SolicitacaoReservaServiceInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/weg/wdm/service/interfaces/SolicitacaoReservaServiceInt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/weg/wdm/controller/SolicitacaoReservaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/weg/wdm/controller/SolicitacaoReservaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/weg/wdm/controller/dto/reserva/PeriodoReservaRequestPostDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/weg/wdm/controller/dto/reserva/SolicitacaoReservaRequestPostDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/weg/wdm/controller/dto/reserva/SolicitacaoReservaResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/weg/wdm/entity/Reserva.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/weg/wdm/entity/Reserva.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/weg/wdm/entity/SolicitacaoReserva.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/weg/wdm/entity/SolicitacaoReserva.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/weg/wdm/service/implementation/SolicitacaoReservaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/weg/wdm/service/implementation/SolicitacaoReservaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/weg/wdm/service/interfaces/SolicitacaoReservaServiceInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/weg/wdm/service/interfaces/SolicitacaoReservaServiceInt.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +110,7 @@
       <workItem from="1720471065713" duration="13927000" />
       <workItem from="1720560373539" duration="12000" />
       <workItem from="1720802404062" duration="10160000" />
-      <workItem from="1721061573707" duration="15676000" />
+      <workItem from="1721061573707" duration="20174000" />
     </task>
     <servers />
   </component>

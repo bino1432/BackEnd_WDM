@@ -1,8 +1,9 @@
 package net.weg.wdm.controller;
 
 import lombok.AllArgsConstructor;
-import net.weg.wdm.controller.dto.reserva.SolicitacaoReservaRequestPostDTO;
-import net.weg.wdm.controller.dto.reserva.SolicitacaoReservaResponseDTO;
+import net.weg.wdm.controller.dto.solicitacao.SolicitacaoReservaRequestPostDTO;
+import net.weg.wdm.controller.dto.solicitacao.SolicitacaoReservaResponseDTO;
+import net.weg.wdm.controller.dto.solicitacao.SolicitacaoResponseDTO;
 import net.weg.wdm.entity.SolicitacaoReserva;
 import net.weg.wdm.service.implementation.SolicitacaoReservaServiceImpl;
 import org.springframework.data.domain.Page;
@@ -45,7 +46,7 @@ public class SolicitacaoReservaController {
     }
 
     @GetMapping("/page")
-    public ResponseEntity<Page<SolicitacaoReserva>> buscarTodasSolicitacoesPage(
+    public ResponseEntity<Page<SolicitacaoResponseDTO>> buscarTodasSolicitacoesPage(
             @PageableDefault(
                     direction = Sort.Direction.DESC,
                     size = 5) Pageable pageable){

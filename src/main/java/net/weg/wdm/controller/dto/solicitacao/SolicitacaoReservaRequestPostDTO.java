@@ -1,4 +1,6 @@
-package net.weg.wdm.controller.dto.reserva;
+package net.weg.wdm.controller.dto.solicitacao;
+
+import net.weg.wdm.controller.dto.periodo.PeriodoReservaRequestPostDTO;
 
 import java.time.LocalDate;
 import java.util.List;

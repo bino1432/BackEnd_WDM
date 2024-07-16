@@ -7,7 +7,6 @@ import java.util.List;
 
 public record ReservaResponseDTO(
         Long numero,
-        String solicitante,
         List<DispositivoReservado> dispositivoReservados,
         String status,
         Ambiente ambiente,

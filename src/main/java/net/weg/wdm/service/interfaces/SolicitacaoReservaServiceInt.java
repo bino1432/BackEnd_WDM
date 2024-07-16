@@ -1,7 +1,8 @@
 package net.weg.wdm.service.interfaces;
 
-import net.weg.wdm.controller.dto.reserva.SolicitacaoReservaRequestPostDTO;
-import net.weg.wdm.controller.dto.reserva.SolicitacaoReservaResponseDTO;
+import net.weg.wdm.controller.dto.solicitacao.SolicitacaoReservaRequestPostDTO;
+import net.weg.wdm.controller.dto.solicitacao.SolicitacaoReservaResponseDTO;
+import net.weg.wdm.controller.dto.solicitacao.SolicitacaoResponseDTO;
 import net.weg.wdm.entity.SolicitacaoReserva;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -14,5 +15,5 @@ public interface SolicitacaoReservaServiceInt {
     SolicitacaoReserva criarSolicitacaoReservas(SolicitacaoReservaRequestPostDTO reservaDTO);
     SolicitacaoReserva buscarSolicitacao(Long id);
     List<SolicitacaoReservaResponseDTO> buscarTodasSolicitacoes();
-    Page<SolicitacaoReserva> buscarTodasSolicitacoesPage(Pageable pageable);
+    Page<SolicitacaoResponseDTO> buscarTodasSolicitacoesPage(Pageable pageable);
 }
