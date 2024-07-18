@@ -6,6 +6,7 @@ import net.weg.wdm.controller.dto.solicitacao.SolicitacaoReservaResponseDTO;
 import net.weg.wdm.controller.dto.solicitacao.SolicitacaoResponseDTO;
 import net.weg.wdm.entity.*;
 import net.weg.wdm.repository.SolicitacaoReservaRepository;
+import net.weg.wdm.repository.UsuarioRepository;
 import net.weg.wdm.service.interfaces.SolicitacaoReservaServiceInt;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -51,12 +52,6 @@ public class SolicitacaoReservaServiceImpl implements SolicitacaoReservaServiceI
 
     @Override
     public Page<SolicitacaoResponseDTO> buscarTodasSolicitacoesPage(Pageable pageable){
-
-        Page<SolicitacaoReserva> solicitacoes = repository.findAll(pageable);
-
-        Page<SolicitacaoResponseDTO> response = solicitacoes.map(
-                solicitacao -> solicitacao.toOtherDTO());
-
-        return response;
+        return repository.findAll(pageable).map(solicitacao -> solicitacao.toOtherDTO());
     }
 }
