@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="a39120ea-37fd-468a-950c-6a3860f553b4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +58,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "da552355df18d706b1cb44aad2699661",
     "vue.rearranger.settings.migration": "true"
   }
@@ -97,7 +94,7 @@
       <workItem from="1721061573707" duration="21243000" />
       <workItem from="1721164164586" duration="44000" />
       <workItem from="1721330237445" duration="349000" />
-      <workItem from="1721407165313" duration="507000" />
+      <workItem from="1721407165313" duration="2352000" />
     </task>
     <servers />
   </component>
